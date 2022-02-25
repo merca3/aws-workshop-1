@@ -1,0 +1,23 @@
+{
+  "name": "aws-workshop-1",
+  "version": "1.0.0",
+  "description": "AWS workshop #1",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merca3/aws-workshop-1.git"
+  },
+  "keywords": [
+    "aws",
+    "workshop"
+  ],
+  "author": "Katrina Merca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merca3/aws-workshop-1/issues"
+  },
+  "homepage": "https://github.com/merca3/aws-workshop-1#readme"
+}
