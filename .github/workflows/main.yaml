@@ -16,11 +16,17 @@ jobs:
           node-version: "14"
 
       # AWS Credentials
+      - name: Configure AWS Credentials
+        uses: aws-action/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-north-1
 
-      - name: Install CLI
-        env:
-          CI: true
-        run: npm ci
+      # - name: Install CLI
+      #   env:
+      #     CI: true
+      #   run: npm ci
 
       - name: deploy
         run: npm run deploy
